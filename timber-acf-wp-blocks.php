@@ -221,7 +221,7 @@ if ( ! class_exists( 'Timber_Acf_Wp_Blocks' ) ) {
 
 					// Support for "parent".
 					if ( ! empty( $file_headers['parent'] ) ) {
-						$data['parent'] = str_getcsv( $file_headers['parent'], ' ', '"' );
+						$data['parent'] = str_getcsv( $file_headers['parent'], ' ', '"', '\\' );
 					}
 
 					// Merges the default options.
